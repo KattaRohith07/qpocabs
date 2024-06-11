@@ -1,0 +1,85 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar{
+  margin-top: -1.5%;
+  height: 103%;
+  width: 250px;
+  background-color: whitesmoke;
+}
+
+.head{
+  margin-left: 30px;
+  padding: 10px;
+  color: black;
+  font-weight: 10px;
+}
+.head:hover{
+  background-color: blueviolet;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.hr{
+  width: 150px;
+}
+ListItem:hover{
+  background-color: blueviolet;
+  border-radius: 3px;
+}
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Sidebar styles */
+.MuiDrawer-paper {
+  box-sizing: border-box;
+  width: 240px;
+}
+
+.active {
+  background-color: lightblue !important;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.MuiListItem-root {
+  padding: 4.65%;
+  margin-left: 5px;
+}
+
+.MuiListItem-root:hover {
+  background-color: lightblue;
+  border-radius: 5px;
+  width: 90%;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+  .MuiDrawer-paper {
+    width: 70%;
+  }
+
+  .MuiIconButton-root {
+    margin: 8px;
+  }
+}
