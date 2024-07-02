@@ -5,6 +5,7 @@ import { Box } from '@mui/material';
 import Dashboard from './Components/dashboard';
 import Sidebar from './Components/Sidebar';
 import './App.css'; 
+import Users from './Components/users';
 
 const drawerWidth = 240;
 
@@ -25,7 +26,8 @@ function App() {
         >
           <Routes>
             <Route path="/dashboard" element={<Dashboard />} />
-          </Routes>
+            <Route path="/users" element={<Users/>}/>
+            </Routes>
         </Box>
       </Box>
     </Router>

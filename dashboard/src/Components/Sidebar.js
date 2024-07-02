@@ -51,7 +51,7 @@ const Sidebar = () => {
     <div>
       <Toolbar>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Avatar alt="Logo" src="C:\Users\jayk7\OneDrive\Pictures\qpocabs\dashboard\src\assests\qpologo.svg" sx={{ marginRight: 2 }} />
+          <Avatar alt="Logo" src="/path/to/logo.svg" sx={{ marginRight: 2 }} />
           <Typography variant="h6" noWrap component="div">
             Cabs
           </Typography>
@@ -103,7 +103,7 @@ const Sidebar = () => {
           <ListItemIcon><LocationOnIcon /></ListItemIcon>
           <ListItemText primary="Notifications" />
         </ListItem>
-        <ListItem button key="Users">
+        <ListItem button component={NavLink} to="/users" onClick={handleDrawerToggle} activeClassName="active" key="Users">
           <ListItemIcon><LocationOnIcon /></ListItemIcon>
           <ListItemText primary="Users" />
         </ListItem>
